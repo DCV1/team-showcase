@@ -35,10 +35,23 @@ export function OtherBookOffers() {
   return (
     <section className="px-8 pt-28">
       <div className="container mx-auto mb-10">
-        <Typography variant="h2" color="blue-gray" className="mb-2" placeholder="title">
+        <Typography
+          variant="h2"
+          color="blue-gray"
+          className="mb-2"
+          placeholder="title"
+          onResize={() => { <></> }}
+          onResizeCapture={() => { <></> }}
+        >
           Activities
         </Typography>
-        <Typography variant="lead" className="w-full max-w-lg !text-gray-500" placeholder="explanation">
+        <Typography
+          variant="lead"
+          className="w-full max-w-lg !text-gray-500"
+          placeholder="explanation"
+          onResize={() => { <></> }}
+          onResizeCapture={() => { <></> }}
+        >
           인공지능의 가능성을 공유하고 다양한 전시와 프로젝트를 통해 생성형 AI에 대한
           크리에이터들에게 이해와 활용을 돕고자 합니다.
         </Typography>

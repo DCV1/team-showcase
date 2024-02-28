@@ -26,13 +26,22 @@ export function Faq() {
     <section className="px-8 py-40">
       <div className="container mx-auto">
         <div className="text-center">
-          <Typography variant="h1" color="blue-gray" className="mb-4" placeholder="Title">
+          <Typography
+            variant="h1"
+            color="blue-gray"
+            className="mb-4"
+            placeholder="Title"
+            onResize={() => { <></> }}
+            onResizeCapture={() => { <></> }}
+          >
             Frequently Asked Questions
           </Typography>
           <Typography
             variant="lead"
             className="mx-auto mb-24 w-full max-w-2xl !text-gray-500"
             placeholder="Subtitle"
+            onResize={() => { <></> }}
+            onResizeCapture={() => { <></> }}
           >
             인공지능과 인간이 협력하여 더 나은 미래를 만들어가는 비전을 가지고 있으며, 이를 통해 창의력과 혁신을 강화하려 합니다.
           </Typography>
@@ -53,6 +62,8 @@ export function Faq() {
                   color="blue-gray"
                   className="font-normal text-gray-500"
                   placeholder="Q&A"
+                  onResize={() => { <></> }}
+                  onResizeCapture={() => { <></> }}
                 >
                   {desc}
                 </Typography>

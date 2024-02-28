@@ -69,6 +69,8 @@ export function CarouselFeatures() {
                   color="white"
                   className="mb-5 text-xl font-normal"
                   placeholder="프로젝트 설명"
+                  onResize={() => { <></> }}
+                  onResizeCapture={() => { <></> }}
                 >
                   {content.content}
                 </Typography>
@@ -79,6 +81,8 @@ export function CarouselFeatures() {
                     color="white"
                     className="font-medium uppercase"
                     placeholder="팀원 이름"
+                    onResize={() => { <></> }}
+                    onResizeCapture={() => { <></> }}
                   >
                     {content.name}
                   </Typography>
