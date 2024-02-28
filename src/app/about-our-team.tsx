@@ -34,7 +34,14 @@ export function GetYourBookFromUs() {
   return (
     <section className="px-8">
       <div className="container mx-auto mb-16 text-center">
-        <Typography variant="h2" color="blue-gray" className="mb-4" placeholder="title">
+        <Typography
+          variant="h2"
+          color="blue-gray"
+          className="mb-4"
+          placeholder="title"
+          onResize={() => { /* Handle resize event (optional) */ }}
+          onResizeCapture={() => { /* Handle captured resize event (optional) */ }}
+        >
           우리는 이런 연구를 합니다!
         </Typography>
         <Typography
