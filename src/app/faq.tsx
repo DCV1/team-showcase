@@ -56,7 +56,12 @@ export function Faq() {
               onResize={() => { /* Handle resize event (optional) */ }}
               onResizeCapture={() => { /* Handle captured resize event (optional) */ }}
             >
-              <AccordionHeader className="text-left text-gray-900" placeholder="Q&A">
+              <AccordionHeader
+                className="text-left text-gray-900"
+                placeholder="Q&A"
+                onResize={() => { /* Handle resize event (optional) */ }}
+                onResizeCapture={() => { /* Handle captured resize event (optional) */ }}
+              >
                 {title}
               </AccordionHeader>
               <AccordionBody>
