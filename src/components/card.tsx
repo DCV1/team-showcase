@@ -26,8 +26,8 @@ export function BookCard({
   offPrice,
 }: BookCardProps) {
   return (
-    <Card color="transparent" shadow={false} placeholder='explanation'>
-      <CardHeader color="gray" floated={false} className="mx-0 mt-0 mb-6" placeholder='explanation'>
+    <Card color="transparent" shadow={false} placeholder='explanation' onResize={undefined} onResizeCapture={undefined}>
+      <CardHeader color="gray" floated={false} className="mx-0 mt-0 mb-6" placeholder='explanation' onResize={undefined} onResizeCapture={undefined}>
         <Image
           width={768}
           height={768}
@@ -36,8 +36,8 @@ export function BookCard({
           className="h-full w-full scale-[1.1] object-cover object-center"
         />
       </CardHeader>
-      <CardBody className="p-0" placeholder='explanation'>
-        <Typography color="blue" className="mb-2 text-xs !font-semibold" placeholder='explanation'>
+      <CardBody className="p-0" placeholder='explanation' onResize={undefined} onResizeCapture={undefined}>
+        <Typography color="blue" className="mb-2 text-xs !font-semibold" placeholder='explanation' onResize={undefined} onResizeCapture={undefined}>
           {category}
         </Typography>
         <a href="#">
@@ -46,11 +46,13 @@ export function BookCard({
             color="blue-gray"
             className="mb-3 font-bold normal-case xl:w-64"
             placeholder='explanation'
+            onResize={undefined}
+            onResizeCapture={undefined}
           >
             {title}
           </Typography>
         </a>
-        <Typography className="mb-4 font-normal !text-gray-500" placeholder='explanation'>
+        <Typography className="mb-4 font-normal !text-gray-500" placeholder='explanation' onResize={undefined} onResizeCapture={undefined}>
           {desc}
         </Typography>
         <div className="flex gap-2">
@@ -59,10 +61,12 @@ export function BookCard({
             color="blue-gray"
             className={offPrice ? "line-through" : ""}
             placeholder='explanation'
+            onResize={undefined}
+            onResizeCapture={undefined}
           >
             {price}
           </Typography>
-          <Typography variant="h5" color="red" placeholder='explanation'>
+          <Typography variant="h5" color="red" placeholder='explanation' onResize={undefined} onResizeCapture={undefined}>
             {offPrice}
           </Typography>
         </div>
