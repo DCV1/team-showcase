@@ -30,7 +30,7 @@ const FEATURES = [
   },
 ];
 
-export function GetYourBookFromUs() {
+export function AboutOurTeam() {
   return (
     <section className="px-8">
       <div className="container mx-auto mb-16 text-center">
@@ -39,8 +39,8 @@ export function GetYourBookFromUs() {
           color="blue-gray"
           className="mb-4"
           placeholder="title"
-          onResize={() => { /* Handle resize event (optional) */ }}
-          onResizeCapture={() => { /* Handle captured resize event (optional) */ }}
+          onResize={() => { <></> }}
+          onResizeCapture={() => { <></> }}
         >
           우리는 이런 연구를 합니다!
         </Typography>
@@ -48,6 +48,8 @@ export function GetYourBookFromUs() {
           variant="lead"
           className="mx-auto w-full px-4 !text-gray-500 lg:w-5/12"
           placeholder="subtitle"
+          onResize={() => { <></> }}
+          onResizeCapture={() => { <></> }}
         >
           딥러닝 기초 공부(CNN), 20개 GAN 논문 리뷰와 코드 구현, Diffusion 10개 논문 리뷰와 코드 구현, 최신 연구 동향 파악하고 GenAI 관련 서비스를 구현합니다.
         </Typography>
@@ -63,4 +65,4 @@ export function GetYourBookFromUs() {
   );
 }
 
-export default GetYourBookFromUs;
+export default AboutOurTeam;
