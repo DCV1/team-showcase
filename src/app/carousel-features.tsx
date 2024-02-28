@@ -44,6 +44,8 @@ export function CarouselFeatures() {
           transition={{ duration: 1 }}
           // nextArrow={() => <></>}
           // prevArrow={() => <></>}
+          onResize={() => { /* Handle resize event (optional) */ }}
+          onResizeCapture={() => { /* Handle captured resize event (optional) */ }}
           navigation={({ setActiveIndex, activeIndex, length }) => (
             <div className="absolute left-16 bottom-4 z-50 flex h-5 w-20 -translate-x-2/4 gap-2 md:left-2/4">
               {new Array(length).fill("").map((_, i) => (
