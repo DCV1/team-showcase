@@ -53,6 +53,8 @@ export function Faq() {
               open={open === key + 1}
               onClick={() => handleOpen(key + 1)}
               placeholder="Q&A"
+              onResize={() => { /* Handle resize event (optional) */ }}
+              onResizeCapture={() => { /* Handle captured resize event (optional) */ }}
             >
               <AccordionHeader className="text-left text-gray-900" placeholder="Q&A">
                 {title}
