@@ -31,7 +31,7 @@ export default function RootLayout({
       </head>
       <body className={roboto.className}>
         <Layout>
-          {children}
+          {children as React.ReactNode}
           <FixedPlugin />
         </Layout>
       </body>
