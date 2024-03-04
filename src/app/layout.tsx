@@ -1,4 +1,5 @@
 import "./globals.css";
+import React from "react";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { Layout, FixedPlugin } from "@/components";
@@ -31,7 +32,7 @@ export default function RootLayout({
       </head>
       <body className={roboto.className}>
         <Layout>
-          {children as React.ReactNode}
+          {children}
           <FixedPlugin />
         </Layout>
       </body>

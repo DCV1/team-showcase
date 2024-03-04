@@ -13,8 +13,6 @@ function Hero() {
             color="blue"
             className="text-3xl !leading-snug"
             placeholder="category"
-            onResize={() => { <></> }}
-            onResizeCapture={() => { <></> }}
           >
             Generative AI
           </Typography>
@@ -23,8 +21,6 @@ function Hero() {
             color="blue-gray"
             className="mb-2 max-w-sm text-3xl !leading-snug lg:mb-3 lg:text-3xl"
             placeholder="title"
-            onResize={() => { <></> }}
-            onResizeCapture={() => { <></> }}
           >
             DCV LAB의 아트랩 사업부 Art&Tech 전시 온라인 쇼케이스
           </Typography>
@@ -32,8 +28,6 @@ function Hero() {
             variant="lead"
             className="mb-6 font-normal !text-gray-500 md:pr-16 xl:pr-28 text-base"
             placeholder="explanation"
-            onResize={() => { <></> }}
-            onResizeCapture={() => { <></> }}
           >
             크리에이터를 지원하기 위해 &apos;Text to Video with Audio&apos;기술을 활용하고 있습니다.
             이 기술을 통해 음악과 비디오를 결합한 작품 활동을 지원하며, 특히 작품의 초기 아이디어 구상 단계에서 크게 도움을 줍니다.
@@ -43,8 +37,6 @@ function Hero() {
             size="lg"
             color="gray"
             placeholder="button"
-            onResize={() => { <></> }}
-            onResizeCapture={() => { <></> }}
           >
             <a href="https://dcv1.github.io/tutorial/intro.html" target="_blank">Learn More</a>
           </Button>
