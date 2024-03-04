@@ -16,7 +16,7 @@ class VideoClip extends React.Component {
         };
 
         return <>
-            <CardBody className="grid justify-center" placeholder='explanation' onResize={undefined} onResizeCapture={undefined}>
+            <CardBody className="grid justify-center" placeholder='explanation'>
                 <YouTube
                     videoId="PeoVSwjnSjE?si=Idnym4FbEAEmcBe9"
                     opts={options} onReady={this._onReady}

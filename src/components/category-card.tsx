@@ -12,7 +12,7 @@ interface CategoryCardProps {
 
 function CategoryCard({ img, title, desc, icon: Icon }: CategoryCardProps) {
   return (
-    <Card className="relative grid min-h-[12rem] w-full overflow-hidden" placeholder='explanation' onResize={undefined} onResizeCapture={undefined}>
+    <Card className="relative grid min-h-[12rem] w-full overflow-hidden" placeholder='explanation'>
       <Image
         width={768}
         height={768}
@@ -21,13 +21,13 @@ function CategoryCard({ img, title, desc, icon: Icon }: CategoryCardProps) {
         className="absolute inset-0 h-full w-full object-cover object-center"
       />
       <div className="absolute inset-0 h-full w-full bg-black/70" />
-      <CardBody className="relative flex flex-col justify-between" placeholder='explanation' onResize={undefined} onResizeCapture={undefined}>
+      <CardBody className="relative flex flex-col justify-between" placeholder='explanation'>
         <Icon className="h-8 w-8 text-white" />
         <div>
-          <Typography variant="h5" className="mb-1" color="white" placeholder='explanation' onResize={undefined} onResizeCapture={undefined}>
+          <Typography variant="h5" className="mb-1" color="white" placeholder='explanation'>
             {title}
           </Typography>
-          <Typography color="white" className="text-xs font-bold opacity-50" placeholder='explanation' onResize={undefined} onResizeCapture={undefined}>
+          <Typography color="white" className="text-xs font-bold opacity-50" placeholder='explanation'>
             {desc}
           </Typography>
         </div>

@@ -42,10 +42,6 @@ export function CarouselFeatures() {
         <Carousel
           className="rounded-xl"
           transition={{ duration: 1 }}
-          // nextArrow={() => <></>}
-          // prevArrow={() => <></>}
-          onResize={() => { /* Handle resize event (optional) */ }}
-          onResizeCapture={() => { /* Handle captured resize event (optional) */ }}
           navigation={({ setActiveIndex, activeIndex, length }) => (
             <div className="absolute left-16 bottom-4 z-50 flex h-5 w-20 -translate-x-2/4 gap-2 md:left-2/4">
               {new Array(length).fill("").map((_, i) => (
@@ -71,8 +67,6 @@ export function CarouselFeatures() {
                   color="white"
                   className="mb-5 text-xl font-normal"
                   placeholder="프로젝트 설명"
-                  onResize={() => { <></> }}
-                  onResizeCapture={() => { <></> }}
                 >
                   {content.content}
                 </Typography>
@@ -83,8 +77,6 @@ export function CarouselFeatures() {
                     color="white"
                     className="font-medium uppercase"
                     placeholder="팀원 이름"
-                    onResize={() => { <></> }}
-                    onResizeCapture={() => { <></> }}
                   >
                     {content.name}
                   </Typography>

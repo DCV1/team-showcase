@@ -40,8 +40,6 @@ export function OtherBookOffers() {
           color="blue-gray"
           className="mb-2"
           placeholder="title"
-          onResize={() => { <></> }}
-          onResizeCapture={() => { <></> }}
         >
           Activities
         </Typography>

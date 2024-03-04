@@ -42,8 +42,6 @@ function NavItem({ children, href }: NavItemProps) {
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
         placeholder='explanation'
-        onResize={undefined}
-        onResizeCapture={undefined}
       >
         {children}
       </Typography>
@@ -68,7 +66,7 @@ export function Navbar() {
   return (
     <MTNavbar shadow={false} fullWidth className="border-0 sticky top-5 z-50" placeholder='explanation'>
       <div className="container mx-auto flex items-center justify-between">
-        <Typography color="blue-gray" className="text-lg font-bold" placeholder='explanation' onResize={undefined} onResizeCapture={undefined}>
+        <Typography color="blue-gray" className="text-lg font-bold" placeholder='explanation'>
           Deep Computer Vision LAB
         </Typography>
         <ul className="mr-20 hidden items-center gap-8 lg:flex">
@@ -91,8 +89,6 @@ export function Navbar() {
           onClick={handleOpen}
           className="ml-auto inline-block lg:hidden"
           placeholder='explanation'
-          onResize={undefined}
-          onResizeCapture={undefined}
         >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
