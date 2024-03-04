@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Button } from "@material-tailwind/react";
+import notionImage from 'public/image/dcv.png'
 
 export function FixedPlugin() {
   return (
@@ -16,7 +17,7 @@ export function FixedPlugin() {
           height={128}
           className="w-5 h-5"
           alt="DCV Notion"
-          src="/public/image/dcv.png"
+          src={notionImage}
         />{" "}
         DCV LAB 노션 페이지
       </Button>
