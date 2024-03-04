@@ -1,4 +1,4 @@
-import { Typography, Button, Input } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
 
 const SUB_LINKS = ["Claim", "Privacy", "Terms"];
 const CURRENT_YEAR = new Date().getFullYear();
@@ -10,11 +10,11 @@ export function Footer() {
         <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-blue-gray-50 py-6 md:justify-between">
           <Typography className="text-center font-normal !text-gray-700" placeholder='explanation'>
             &copy; {CURRENT_YEAR} Made with{" "}
-            <a href="https://www.material-tailwind.com" target="_blank">
+            <a href="https://dcv1.github.io/tutorial/intro.html" target="_blank">
               AI Video Showcase
             </a>{" "}
             by{" "}
-            <a href="https://www.creative-tim.com" target="_blank">
+            <a href="https://modulabs.notion.site/Deep-Computer-Vision-LAB-66bfa3524b2547b5af7aeece277584a7?pvs=4" target="_blank">
               Deep Computer Vision LAB
             </a>
             .
