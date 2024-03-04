@@ -44,6 +44,7 @@ function Hero() {
         <div className="mt-30 grid gap-6 lg:mt-0">
           <div className="grid grid-cols-1 gap-1">
             <Image
+              unoptimized={true}
               width={600}
               height={600}
               src="https://github.com/DCV1/tutorial/blob/main/docs/part2/media-audio-reactive/20240126185207.gif?raw=true"
